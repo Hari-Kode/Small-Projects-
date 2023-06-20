@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --base-color: #51dacf;
+    --white-color: #d4f0f9;
+    --Black-color: #111111;
+    --primary-color: #2bccc0;
+    --secondry-color: #7be3db;
+}
+
+html {
+    height: 100dvh;
+    width: 100dvw;
+    background: linear-gradient(90deg, var(--primary-color), var(--base-color), var(--secondry-color));
+    /* Center the form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border: 0.1px solid var(--secondry-color);
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--primary-color) 100%, var(--secondry-color) 100%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Heading {
+    font-size: 13px;
+    text-align: center;
+    color: var(--white-color);
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--secondry-color);
+}
+
+.input {
+    position: relative;
+    top: 10px;
+    min-height: 120px;
+    background-color: var(--secondry-color);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+label {
+    position: absolute;
+    height: 25px;
+    min-width: 210px;
+    font-size: 21px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+#h {
+    position: absolute;
+    top: 50px;
+    height: 50px;
+    width: 160px;
+    border: none;
+    background: var(--white-color);
+    border-radius: 2px;
+    outline: none;
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+#h::placeholder {
+    color: var(--primary-color);
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button {
+    margin-top: 100px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+    transition: .2s;
+}
